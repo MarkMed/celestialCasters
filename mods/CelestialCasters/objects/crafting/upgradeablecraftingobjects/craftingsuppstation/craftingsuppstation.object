@@ -1,0 +1,237 @@
+{
+  "objectName" : "craftingsuppstation",
+  "colonyTags": [
+    "crafting"
+  ],
+  "rarity": "Legendary",
+  "race": "generic",
+  "category": "crafting",
+
+
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price": 5000,
+  "printable": false,
+  "scripts": [
+    "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua"
+  ],
+
+  "animation" : "craftingsuppstation.animation",
+  "animationPosition" : [0, 20],
+  
+  "inventoryIcon" : "craftingsuppstationicon.png",
+  "placementImage" : "craftingsuppstation.png:default.default",
+  "placementImagePosition" : [-16, 0],    
+
+  "description": "Station to craft staffs and wands for support and enchant casters.",
+  "shortdescription": "^d8b616;Support Caster Station^white;",
+  "apexDescription": "Fascinating! These advanced tools can modify DNA and grant powerful buffs.",
+  "avianDescription": "A sacred table to channel the will of the gods.",
+  "floranDescription": "Shiny table! Floran use sssticks... become ssstronger!",
+  "glitchDescription": "Intriguing. This sacred table allows me to harness holy magic.",
+  "humanDescription": "An interesting table... feels almost unreal.",
+  "hylotlDescription": "The tranquility of meditation, channeled through Staffs and Wands.",
+  "novakidDescription": "Well, that there looks like a holy table! Not sure if I should touch it, though.",
+
+  
+  "lightColor": [
+    216,
+    182,
+    107
+  ],
+  "flickerPeriod": 0.3,
+  "flickerMinIntensity": 0.8,
+  "flickerMaxIntensity": 1,
+  "flickerPeriodVariance": 0.05,
+  "flickerIntensityVariance": 0.02,
+
+  "learnBlueprintsOnPickup" : [],
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 3,
+
+  "upgradeStages" : [
+    {
+      "animationState": "craftingsuppstation",  
+      
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "craftingsuppstationicon.png",
+        "placementImage" : "craftingsuppstation.png:default.default",
+        "placementImagePosition" : [-16, 0],    
+
+        "description": "Station to craft staffs and wands for support and enchant casters.",
+        "shortdescription": "^d8b616;Protector Craft Station^white;",
+        "apexDescription": "Fascinating! These advanced tools can modify DNA and grant powerful buffs.",
+        "avianDescription": "A sacred table to channel the will of the gods.",
+        "floranDescription": "Shiny table! Floran use sssticks... become ssstronger!",
+        "glitchDescription": "Intriguing. This sacred table allows me to harness holy magic.",
+        "humanDescription": "An interesting table... feels almost unreal.",
+        "hylotlDescription": "The tranquility of meditation, channeled through Staffs and Wands.",
+        "novakidDescription": "Well, that there looks like a holy table! Not sure if I should touch it, though."
+      },
+
+      "interactData" : {
+        "config": "/interface/windowconfig/craftingsuppstation.config",
+        "paneLayoutOverride": {
+          "windowtitle": {
+            "title": " Protector Table",
+            "subtitle": " ^#b9b5b2;Spells",
+            "icon": {
+              "file": "/interface/crafting/suppstation.png"
+            }
+          }
+        },
+
+        "filter" : [ "craftingsuppstation" ],
+        "initialRecipeUnlocks": [],
+        "upgradeMaterials": [
+          {
+            "item": "phasematter",
+            "count": 3
+          },
+          {
+            "item": "biosample",
+            "count": 3
+          },
+          {
+            "item": "diamond",
+            "count": 3
+          },
+          {
+            "item": "corefragmentore",
+            "count": 3
+          }
+        ]
+      },
+
+      "learnBlueprintsOnPickup": [],
+      "upgradeSoundEffect": "fanfare",
+      "upgradeParticleEffect": "dust"
+    },
+
+    {
+      "animationState": "craftingsuppstation2",
+      
+      "itemSpawnParameters" : {
+        "price" : 750,
+        "inventoryIcon" : "craftingsuppstation2icon.png",
+        "placementImage" : "craftingsuppstation2.png:default.default",
+        "placementImagePosition" : [-16, 0],
+
+        "description": "Station to craft staffs and wands for support and enchant casters.",
+        "shortdescription": "^d8b616;Enchanter Craft Station^white;",
+
+        "apexDescription": "Fascinating! These advanced tools can modify DNA and grant powerful buffs.",
+        "avianDescription": "A sacred table to channel the will of the gods.",
+        "floranDescription": "Shiny table! Floran use sssticks... become ssstronger!",
+        "glitchDescription": "Intriguing. This sacred table allows me to harness holy magic.",
+        "humanDescription": "An interesting table... feels almost unreal.",
+        "hylotlDescription": "The tranquility of meditation, channeled through Staffs and Wands.",
+        "novakidDescription": "Well, that there looks like a holy table! Not sure if I should touch it, though."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/craftingsuppstation.config",
+        "paneLayoutOverride": {
+          "windowtitle": {
+            "title": "Enchanter Table",
+            "subtitle": " ^#b9b5b2;Wandsss",
+            "icon": {
+              "file": "/interface/crafting/suppstation.png"
+            }
+          }
+        },
+        "filter" : [ "craftingsuppstation", "craftingsuppstation2" ],
+        "initialRecipeUnlocks" : [],
+        "upgradeMaterials": [
+          {
+            "item": "solariumstar",
+            "count": 13
+          },
+          {
+            "item": "corefragmentore",
+            "count": 7
+          },
+          {
+            "item": "prisiliteore",
+            "count": 7
+          }
+        ]
+      },
+      "learnBlueprintsOnPickup" : [],
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    },
+    
+    {
+      "animationState": "craftingsuppstation3",
+      
+      "itemSpawnParameters" : {
+        "price" : 750,
+        "inventoryIcon" : "craftingsuppstation3icon.png",
+        "placementImage" : "craftingsuppstation3.png:default.default",
+        "placementImagePosition" : [-16, 0],
+
+        "description": "Station to craft staffs and wands for support and enchant casters.",
+        "shortdescription": "^d8b616;Ultimate Support Craft Station^white;",
+
+        "apexDescription": "Fascinating! These advanced tools can modify DNA and grant powerful buffs.",
+        "avianDescription": "A sacred table to channel the will of the gods.",
+        "floranDescription": "Shiny table! Floran use sssticks... become ssstronger!",
+        "glitchDescription": "Intriguing. This sacred table allows me to harness holy magic.",
+        "humanDescription": "An interesting table... feels almost unreal.",
+        "hylotlDescription": "The tranquility of meditation, channeled through Staffs and Wands.",
+        "novakidDescription": "Well, that there looks like a holy table! Not sure if I should touch it, though."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/craftingsuppstation.config",
+        "paneLayoutOverride": {
+          "windowtitle": {
+            "title": "Ultimate Support Table",
+            "subtitle": " ^#b9b5b2;Staffs, Wands, and Spells",
+            "icon": {
+              "file": "/interface/crafting/suppstation.png"
+            }
+          }
+        },
+        "filter" : [ "craftingsuppstation", "craftingsuppstation2", "craftingsuppstation3" ],
+        "initialRecipeUnlocks" : []
+      },
+      "learnBlueprintsOnPickup" : [],
+      "upgradeSoundEffect" : "fanfare2",
+      "upgradeParticleEffect" : "dust"
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "craftingsuppstation.png:<color>.<frame>",
+      "imagePosition" : [-16, 0], 
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [
+        [-2, 4], [-1, 4], [0, 4], [1, 4],
+        [-2, 3], [-1, 3], [0, 3], [1, 3],
+        [-2, 2], [-1, 2], [0, 2], [1, 2],
+        [-2, 1], [-1, 1], [0, 1], [1, 1],
+        [-2, 0], [-1, 0], [0, 0], [1, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "craftingsuppstation.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+      "spaces" : [
+        [-2, 4], [-1, 4], [0, 4], [1, 4],
+        [-2, 3], [-1, 3], [0, 3], [1, 3],
+        [-2, 2], [-1, 2], [0, 2], [1, 2],
+        [-2, 1], [-1, 1], [0, 1], [1, 1],
+        [-2, 0], [-1, 0], [0, 0], [1, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
