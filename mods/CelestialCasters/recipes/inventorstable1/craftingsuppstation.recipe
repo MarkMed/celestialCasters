@@ -1,0 +1,26 @@
+{
+	"input": [
+		{
+			"item": "goldbar",
+			"count": 20
+		},
+		{
+			"item": "silverbar",
+			"count": 10
+		},
+		{
+			"item": "diamond",
+			"count": 3
+		}
+	],
+	"output": {
+		"item": "craftingsuppstation",
+		"count": 1
+	},
+	"duration": 5,
+	"groups": [
+		"inventorstable",
+		"craftingstations",
+		"all"
+	]
+}
