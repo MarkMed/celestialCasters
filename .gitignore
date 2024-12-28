@@ -1,0 +1,10 @@
+assets/
+doc/
+storage/
+tiled/
+win32/
+win64/
+mods/FrackinUniverse-6.4.71/
+ModPackHelper_v0.11.bat
+ModPackHelper.log
+mods_go_here
