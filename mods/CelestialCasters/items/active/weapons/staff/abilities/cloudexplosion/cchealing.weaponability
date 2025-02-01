@@ -1,0 +1,17 @@
+{
+  "ability" : {
+    "type" : "cchealing",
+    "name" : "Healing Gas",
+    "scripts" : ["/items/active/weapons/staff/abilities/cloudexplosion/cloudexplosion.lua"],
+    "class" : "CloudExplosion",
+
+    "energyCost" : 50,
+
+    "maxCastRange" : 50,
+
+    "projectileType" : "cchealing",
+    "projectileParameters" : {
+      "baseDamage" : 3
+    }
+  }
+}
