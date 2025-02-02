@@ -1,0 +1,14 @@
+{
+  "name" : "ccnerfslow",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccnerfslow.lua"
+  ],
+
+  "animationConfig" : "ccnerfslow.animation",
+
+  "label" : "CC - Slowed",
+  "icon" : "/interface/statuses/slow.png"
+}
