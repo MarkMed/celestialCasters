@@ -1,0 +1,17 @@
+{
+  "ability" : {
+    "type" : "ccslow",
+    "name" : "Freezing Field",
+    "scripts" : ["/items/active/weapons/staff/abilities/cloudexplosion/cloudexplosion.lua"],
+    "class" : "CloudExplosion",
+
+    "energyCost" : 50,
+
+    "maxCastRange" : 50,
+
+    "projectileType" : "ccslow",
+    "projectileParameters" : {
+      "baseDamage" : 10
+    }
+  }
+}
