@@ -1,3 +1,4 @@
 [
-	{"op": "add", "path": "/cchealing", "value": "/items/active/weapons/staff/abilities/cloudexplosion/cchealing.weaponability"}
+	{"op": "add", "path": "/cchealing", "value": "/items/active/weapons/staff/abilities/cloudexplosion/cchealing.weaponability"},
+	{"op": "add", "path": "/ccslow", "value": "/items/active/weapons/staff/abilities/cloudexplosion/ccslow.weaponability"}
 ]
