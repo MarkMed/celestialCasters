@@ -1,22 +1,22 @@
 {
-  "projectileName" : "cchealing",
+  "projectileName" : "ccslow",
   "physics" : "statuspod",
   "bounces" : -1,
   "timeToLive" : 0.25,
   "speed" : 0,
   "power" : 30,
   "damageKindImage" : "icon.png",
-  "image" : "healingstatusprojectile.png",
+  "image" : "lowgravstatusprojectile.png",
   "animationCycle" : 0.5,
   "frameNumber" : 4,
   "actionOnReap" : [
     {
       "action" : "loop",
-      "count" : 25,
+      "count" : 10,
       "body" : [
         {
           "action" : "particle",
-          "specification" : "pinkgas"
+          "specification" : "ccbluegas"
         }
       ]
     }
@@ -24,22 +24,16 @@
   "piercing" : true,
 
   "damageType" : "ignoresdef",
-  //"damageType" : "NoDamage",
 
-  //"damageKind" : "hidden",
-  "damageKind" : "default",
-  //"damageKind" : "applystatus",
+  "damageKind" : "hidden",
 
   "damagePoly" : [ [-30, -30], [-30, 30], [30, 30], [30, -30]  ],
   "flippable" : true,
   
-  //"damageTeam" : { "type" : "enemy", "team" : 0 },
   "damageTeam" : { "type" : "indiscriminate" },
-  //"damageTeam" : { "type" : "friendly" },
-  //"damageTeam" : { "type" : "ghostly" },
 
   "statusEffects" : [
-    {"effect" : "regenerationfast", "duration" : 5}
-    //{"effect" : "weakpoison", "duration" : 5}
+    //{"effect" : "frostslow", "duration" : 5.0},
+    {"effect" : "ccnerfslow", "duration" : 5.0}
   ]
 }
