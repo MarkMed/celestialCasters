@@ -1,0 +1,11 @@
+{
+  "input" : [
+   { "item" : "corefragmentore", "count" : 1 },
+   { "item" : "bone", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "healwand",
+    "count" : 1
+  },
+  "groups" : [ "craftinganvil", "weapons", "armory1", "melee", "all", "staff" ]
+}
