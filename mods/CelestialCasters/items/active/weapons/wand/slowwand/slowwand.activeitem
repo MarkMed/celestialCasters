@@ -1,11 +1,11 @@
 {
-  "itemName" : "mkmwand",
+  "itemName" : "slowwand",
   "price" : 440,
   "maxStack" : 1,
   "level" : 1,
   "rarity" : "common",
   "description" : "MkM shaman's implement.",
-  "shortdescription" : "MkM Wand",
+  "shortdescription" : "MkM Slow Wand",
   "category" : "wand",
   "twoHanded" : false,
   "itemTags" : ["weapon","wand","upgradeableWeapon","fire","bone"],
@@ -13,8 +13,8 @@
 
   "animation" : "/items/active/weapons/staff/staff.animation",
   "animationParts" : {
-    "staff" : "mkmwand.png",
-    "stone" : "/items/active/weapons/wand/generated/stone/mkmwand.png",
+    "staff" : "slowwand.png",
+    "stone" : "/items/active/weapons/wand/generated/stone/slowwand.png",
     "chargeEffect" : "/items/active/weapons/wand/generated/glow/fire.png"
   },
   "animationCustom" : {
@@ -40,21 +40,12 @@
     }
   },
 
-  "inventoryIcon" : "mkmwand.png",
+  "inventoryIcon" : "slowwand.png",
 
   "scripts" : ["/items/active/weapons/staff/staff.lua"],
-
-
-  //"elementalType" : "fire",
-  //"primaryAbilityType" : "elementportal",
-  //"primaryAbility" : {},
-  //"elementalType" : "fire",
-  //"primaryAbilityType" : "healingzone",
-  //"primaryAbility" : {},
   
-  "elementalType" : "fire",
-  "primaryAbilityType" : "cchealing",
-  //"primaryAbilityType" : "ccslow",
+  "elementalType" : "ice",
+  "primaryAbilityType" : "ccslow",
   "primaryAbility" : {},
 
   
