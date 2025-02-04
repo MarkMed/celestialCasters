@@ -8,7 +8,7 @@ function init()
 end
 
 function update(dt)
-  mcontroller.controlModifiers({
+  mcontroller.controlModifiers({ -- This is the function that applies the debuff
       speedModifier = 0.3,
       airJumpModifier = 0.5
     })
