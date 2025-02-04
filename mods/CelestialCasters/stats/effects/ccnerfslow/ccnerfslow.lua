@@ -1,7 +1,7 @@
 function init()
-  animator.setParticleEmitterOffsetRegion("drips", mcontroller.boundBox())
-  animator.setParticleEmitterActive("drips", true)
-  effect.setParentDirectives("fade=D1CC87=0.1")
+  animator.setParticleEmitterOffsetRegion("icetrail", mcontroller.boundBox())
+  animator.setParticleEmitterActive("icetrail", true)
+  effect.setParentDirectives("fade=00BBFF=0.15")
   effect.addStatModifierGroup({
     {stat = "jumpModifier", amount = -0.3}
   })
