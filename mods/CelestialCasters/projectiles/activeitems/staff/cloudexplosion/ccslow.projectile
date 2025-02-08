@@ -30,7 +30,10 @@
   "damagePoly" : [ [-30, -30], [-30, 30], [30, 30], [30, -30]  ],
   "flippable" : true,
   
-  "damageTeam" : { "type" : "indiscriminate" },
+  "damageTeam" : {
+    "type": "friendly",
+    "team": 0
+  },
 
   "statusEffects" : [
     //{"effect" : "frostslow", "duration" : 5.0},
