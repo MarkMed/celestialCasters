@@ -1,0 +1,17 @@
+{
+  "ability" : {
+    "type" : "armorupzone",
+    "name" : "Armor+",
+    "scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+    "class" : "ControlProjectile",
+
+    "energyCost" : 80,
+
+    "maxCastRange" : 25,
+
+    "projectileType" : "armorupzone",
+    "projectileParameters" : {
+      "baseDamage" : 4
+    }
+  }
+}
