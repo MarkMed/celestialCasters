@@ -2,6 +2,6 @@
 	{"op": "add", "path": "/cchealing", "value": "/items/active/weapons/staff/abilities/cloudexplosion/cchealing.weaponability"},
 	{"op": "add", "path": "/ccslow", "value": "/items/active/weapons/staff/abilities/cloudexplosion/ccslow.weaponability"},
 	{"op": "add", "path": "/elembreath", "value": "/items/active/weapons/staff/abilities/elembreath/elembreath.weaponability"},
-	{"op": "add", "path": "/armorupzone", "value": "/items/active/weapons/staff/abilities/effectzone/armorupzone.weaponability"},
+	{"op": "add", "path": "/armorupzone", "value": "/items/active/weapons/staff/abilities/controlprojectile/armorupzone.weaponability"},
 	{"op": "add", "path": "/flamewand2", "value": "/items/active/weapons/staff/abilities/controlprojectile/flamewand2.weaponability"}
 ]
