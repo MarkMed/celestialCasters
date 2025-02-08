@@ -1,12 +1,25 @@
 {
-  "name" : "armorup",
- 	"effectConfig": {
-		"stats": [
-			{"stat": "protection",
+	"name" : "armorup",
+	"effectConfig" : {
+		"extraArmorAmount" : 50
+	},
+	"defaultDuration": 10,
+	"scripts": [
+		"armorup.lua"
+	],
+	
+	"animationConfig" : "armorup.animation",
+
+	"label" : "Armor+",
+	"icon" : "/interface/statuses/defense2.png"
+	
+ 	//"effectConfig": {
+		//"stats": [
+			//{"stat": "protection",
 				//"amount": 100,
-				"effectiveMultiplier": 2,
-				"duration": 5
-			}
+			//	"effectiveMultiplier": 2,
+			//	"duration": 5
+			//}
 
 			//{"stat": "maxHealth", "effectiveMultiplier": 1.15 },
 			//{"stat": "maxEnergy", "effectiveMultiplier": 1.2 },
@@ -33,15 +46,10 @@
 
 			//{"stat": "critChance", "amount": 2 },
 			//{"stat": "critDamage", "amount": 0.05 },
-		]
-	},
-	"defaultDuration": 5,
-	"scripts": [
-		//"/stats/effects/genericStatFxApplier.lua",
-		"armorup.lua"
-	],
+		//]
+	//},
 	
-	//"scripts" : [
+	//"scripts": [
 	//	{
 	//		"script" : "/scripts/fr_scripts/healthRegen.lua",
 	//		"args" : {
@@ -49,8 +57,4 @@
 	//		}
 	//	}
 	//],
-	"animationConfig" : "armorup.animation",
-
-	"label" : "Def +2",
-	"icon" : "/interface/statuses/defense2.png"
 }
