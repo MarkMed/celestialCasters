@@ -1,0 +1,89 @@
+{
+  "projectileName": "ccfireswarmer",
+  "physics": "laser",
+  "image": "ccfireswarmer.png",
+  "animationCycle": 0.3,
+  "lightColor": [
+    120,
+    60,
+    30
+  ],
+  "frameNumber": 4,
+  "periodicActions": [],
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/elementimpact/fireimpact.config"
+    }
+  ],
+  "speed": 10,
+  "power": 30,
+  "damageTeam": {
+    "type": "friendly"
+  },
+  "damageKind": "fire",
+  "damagePoly": [
+    [
+      -6,
+      0
+    ],
+    [
+      -4,
+      -4
+    ],
+    [
+      0,
+      -6
+    ],
+    [
+      4,
+      -4
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      -4,
+      4
+    ]
+  ],
+  "fullbright": true,
+  "emitters": [
+    "fireplasma"
+  ],
+  "scripts": [
+    "/projectiles/activeitems/staff/ccstaffprojectile.lua"
+  ],
+  "controlMovement": {
+    "maxSpeed": 20,
+    "controlForce": 50
+  },
+  "statusEffectsEnemy": [
+    {
+      "effect": "ccburningi",
+      "duration": 10
+    }
+    
+  ],
+  "statusEffectsAlly": [
+    {
+      "effect": "regenerationfast",
+      "duration" : 5
+    },
+    {
+      "effect": "ccburningally",
+      "duration": 5
+    }
+  ],
+  "timeToLive": 10,
+  "bounces": 0
+}
