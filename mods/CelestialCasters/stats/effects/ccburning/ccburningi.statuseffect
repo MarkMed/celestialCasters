@@ -1,0 +1,19 @@
+{
+  "name": "ccburningi",
+  "blockingStat": "fireStatusImmunity",
+  "defaultDuration": 2, // duración total del statFX
+
+  "effectConfig": {
+    "tickDamagePercentage": 0.02,
+    "tickTime": 0.5,//1.0 //cada cuánto se ejecuta el daño
+    "colorWrap": "fade=BFBB00=0.2"
+  },
+
+  "scripts": [
+    "ccburning.lua"
+  ],
+
+  "animationConfig": "ccburning.animation",
+  "label": "CC Burning I",
+  "icon": "/interface/statuses/fire.png"
+}

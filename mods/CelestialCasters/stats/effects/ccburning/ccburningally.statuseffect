@@ -1,0 +1,19 @@
+{
+  "name": "ccburningally",
+  "blockingStat": "fireStatusImmunity",
+  "defaultDuration": 2, // duración total del statFX
+
+  "effectConfig": {
+    "tickDamagePercentage": 0,
+    "tickTime": 10,
+    "colorWrap": "fade=BFBB00=0.2"
+  },
+
+  "scripts": [
+    "ccburning.lua"
+  ],
+
+  "animationConfig": "ccburning.animation",
+  "label": "Celestial Burning",
+  "icon": "/interface/statuses/fire.png"
+}
