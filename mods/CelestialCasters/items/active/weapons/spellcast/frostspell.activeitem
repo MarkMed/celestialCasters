@@ -1,0 +1,104 @@
+{
+	"itemName": "frostspell",
+	"price": 440,
+	"maxStack": 1,
+	"level": 1,
+	"rarity": "common",
+	"description": "",
+	"shortdescription": "MkM C-Frost Spell",
+	"category": "Spell Casting",
+	"twoHanded": false,
+	"itemTags": [
+		"weapon",
+		"wand",
+		"staff",
+		"spell",
+		"fire"
+	],
+	"inventoryIcon": [
+		{
+			"image": "/interface/statuses/ice.png"
+		}
+	],
+	"tooltipKind": "staff",
+	"animationParts": {
+		"stone": "",
+		"handle": "",
+		"crown": "",
+		"chargeEffect": "/items/active/weapons/wand/generated/glow/ice.png"
+	},
+	"animation": "/items/active/weapons/wand/wand.animation",
+	"scripts": [
+		"/items/active/weapons/staff/staff.lua"
+	],
+	"elementalType": "ice",
+	"primaryAbilityType": "elementorb",
+	"primaryAbility": {
+		"name": "Celestial Frost",
+		"energyCost": 30,
+		"maxCastRange": 10,
+		"projectileType": "cciceswarmer"
+	},
+	"stances": {
+		"idle": {
+			"weaponOffset": [
+				0,
+				1.0
+			],
+			"armRotation": -90,
+			"weaponRotation": 0,
+			"twoHanded": false,
+			"allowRotate": false,
+			"allowFlip": true
+		},
+		"charge": {
+			"weaponOffset": [
+				0,
+				1.5
+			],
+			"duration": 0,
+			"armRotation": 20,
+			"weaponRotation": -20,
+			"twoHanded": false,
+			"allowRotate": false,
+			"allowFlip": true
+		},
+		"charged": {
+			"weaponOffset": [
+				0,
+				1.5
+			],
+			"armRotation": 20,
+			"weaponRotation": -20,
+			"twoHanded": false,
+			"allowRotate": false,
+			"allowFlip": true,
+			"duration": 0
+		},
+		"discharge": {
+			"weaponOffset": [
+				0,
+				1.5
+			],
+			"duration": 0,
+			"armRotation": -10,
+			"weaponRotation": -50,
+			"twoHanded": false,
+			"allowRotate": true,
+			"allowFlip": true
+		},
+		"cooldown": {
+			"weaponOffset": [
+				0,
+				1.0
+			],
+			"duration": 0,
+			"armRotation": -45,
+			"weaponRotation": 0,
+			"twoHanded": false,
+			"allowRotate": false,
+			"allowFlip": true
+		}
+	},
+	"builder": "/items/buildscripts/buildweapon.lua"
+}
