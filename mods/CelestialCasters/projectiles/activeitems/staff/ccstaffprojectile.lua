@@ -12,6 +12,10 @@ function init()
     self.statusEffectsAlly = config.getParameter("statusEffectsAlly", {})
     self.statusEffectsEnemy = config.getParameter("statusEffectsEnemy", {})
 
+    -- Obtener el damagePoly si está definido, calcular radio aproximado
+    local damagePoly = config.getParameter("damagePoly", {{-0.5, -0.5}, {0.5, -0.5}, {0.5, 0.5}, {-0.5, 0.5}})
+    self.impactRadius = calculateImpactRadius(damagePoly)
+
     self.aimPosition = mcontroller.position()
 
     message.setHandler("updateProjectile", function(_, _, aimPosition)
@@ -96,26 +100,7 @@ function processTimedAction(action, dt)
     end
 end
 function applyEffects()
-    --   local nearbyEntities = world.entityQuery(mcontroller.position(), 1.0, {
-    --     withoutEntityId = entity.id(),
-    --     includedTypes = {"npc", "player", "monster"}
-    --   })
-
-    --   for _, entityId in ipairs(nearbyEntities) do
-    --     -- if world.entityCanDamage(entity.id(), entityId) then
-    --       if self.damageAmount > 0 then
-    --         world.sendEntityMessage(entityId, "applyStatusEffect", "damage", self.damageAmount, entity.id())
-    --       end
-    --       for _, debuffToApply in ipairs(self.statusEffectsEnemy) do
-    --         world.sendEntityMessage(entityId, "applyStatusEffect", debuffToApply.effect, debuffToApply.duration, entity.id())
-    --       end
-    --     -- else
-    --       for _, buffToApply in ipairs(self.statusEffectsAlly) do
-    --         world.sendEntityMessage(entityId, "applyStatusEffect", buffToApply.effect, buffToApply.duration, entity.id())
-    --       end
-    --     -- end
-    --   end
-    local nearbyEntities = world.entityQuery(mcontroller.position(), 0.5, {
+    local nearbyEntities = world.entityQuery(mcontroller.position(), self.impactRadius, {
         withoutEntityId = entity.id(),
         includedTypes = {"creature"}
     })
@@ -154,4 +139,15 @@ function applyAllyEffects(entityId)
         local duration = buffToApply.duration or config.getParameter("defaultDuration", 5)
         world.sendEntityMessage(entityId, "applyStatusEffect", buffToApply.effect, duration, entity.id())
     end
+end
+
+function calculateImpactRadius(damagePoly)
+    local maxDistance = 0.5
+    for _, vertex in ipairs(damagePoly) do
+        local distance = vec2.mag(vertex)
+        if distance > maxDistance then
+            maxDistance = distance
+        end
+    end
+    return maxDistance
 end
