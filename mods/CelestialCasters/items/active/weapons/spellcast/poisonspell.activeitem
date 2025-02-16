@@ -37,7 +37,22 @@
 		"name": "Celestial Poison",
 		"energyCost": 30,
 		"maxCastRange": 10,
-		"projectileType" : "ccpoisonswarmer"
+		"projectileType" : "ccpoisonswarmer",
+		"projectileParameters": {
+			"knockback": 20,
+			"statusEffectsEnemy": [
+				{
+					"effect": "ccpoisoni",
+					"duration": 3
+				}
+			],
+			"statusEffectsAlly": [
+				{
+					"effect": "ccpoisonallyi",
+					"duration": 3
+				}
+			]
+		}
 	},
 	"stances": {
 		"idle": {

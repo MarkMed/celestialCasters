@@ -33,19 +33,6 @@
   "scripts": [
     "/projectiles/activeitems/staff/ccstaffprojectile.lua"
   ],
-  "statusEffectsEnemy": [
-    {
-      "effect": "ccburningi",
-      "duration": 3
-    }
-    
-  ],
-  "statusEffectsAlly": [
-    {
-      "effect": "ccburningallyi",
-      "duration": 3
-    }
-  ],
   "timeToLive": 10,
   "bounces": 0,
   "controlMovement": {

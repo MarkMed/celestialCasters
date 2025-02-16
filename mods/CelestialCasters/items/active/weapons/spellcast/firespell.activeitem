@@ -41,11 +41,26 @@
 		"name": "Celestial Fire",
 		"energyCost": 30,
 		"maxCastRange": 10,
-		"projectileType": "ccfireswarmer"
+		"projectileType": "ccfireswarmer",
+		"projectileParameters": {
+			"knockback": 20,
+			"statusEffectsEnemy": [
+				{
+					"effect": "ccburningi",
+					"duration": 3
+				}
+			],
+			"statusEffectsAlly": [
+				{
+					"effect": "ccburningallyi",
+					"duration": 3
+				}
+			]
+		}
 	},
 	//"altAbilityType": "elementportal",
 	//"altAbility": {
-		//"type" : "shackles",
+	//"type" : "shackles",
 	//	"name": "Electric Shackles",
 	//	"maxCastRange": 1000,
 	//	"energyCost": 10,
