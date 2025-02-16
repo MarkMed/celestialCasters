@@ -1,0 +1,20 @@
+{
+  "name" : "ccslowii",
+  "effectConfig" : {
+    "colorWrap": "fade=33BBFF=0.3",
+    "jumpModifier": -0.5, // 0 normal, -0.5 less
+    "groundMovementModifier": 0.5,// 1 normal, 0.1 slow
+    "speedModifier": 0.5, // 1 normal, 0.1 slow
+    "airJumpModifier": 0.5 // 1 normal, 0.1 less
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccslow.lua"
+  ],
+
+  "animationConfig" : "ccslow.animation",
+
+  "label" : "CC Slow I",
+  "icon" : "/interface/statuses/slow.png"
+}
