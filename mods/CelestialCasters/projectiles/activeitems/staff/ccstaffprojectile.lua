@@ -1,6 +1,5 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
-require "/scripts/hostileTypes.lua"
 
 function init()
 
@@ -12,7 +11,6 @@ function init()
     -- Obtener efectos desde la configuración del proyectil
     self.statusEffectsAlly = config.getParameter("statusEffectsAlly", {})
     self.statusEffectsEnemy = config.getParameter("statusEffectsEnemy", {})
-    self.damageAmount = config.getParameter("damageAmount", 0)
 
     self.aimPosition = mcontroller.position()
 
