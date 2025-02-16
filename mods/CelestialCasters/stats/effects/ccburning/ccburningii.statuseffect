@@ -14,6 +14,6 @@
   ],
 
   "animationConfig": "ccburning.animation",
-  "label": "Burning II",
+  "label": "CC Burning II",
   "icon": "/interface/statuses/fire.png"
 }
