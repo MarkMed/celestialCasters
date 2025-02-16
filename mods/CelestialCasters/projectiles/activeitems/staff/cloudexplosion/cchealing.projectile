@@ -41,13 +41,13 @@
   //"damageTeam" : { "type" : "indiscriminate" },
   "damageTeam": {
     "type": "friendly",
-    "team": 1
+    "team": 0
   },
   //"damageTeamType" : "passive",
   //"damageTeam" : { "type" : "friendly" },
   //"damageTeam" : { "type" : "ghostly" },
 
-  "statusEffects" : [
+  "statusEffectsEnemy" : [
     {"effect" : "weakpoison", "duration" : 5}
   ],
   
@@ -55,5 +55,5 @@
     {"effect" : "regenerationfast", "duration" : 5},
     {"effect" : "armorup", "duration" : 5}
   ],
-  "scripts" : ["/projectiles/activeitems/staff/supportImpact.lua"]
+  "scripts" : ["/projectiles/activeitems/staff/ccstaffprojectile.lua"]
 }

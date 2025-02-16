@@ -35,8 +35,11 @@
     "team": 0
   },
 
-  "statusEffects" : [
+  "statusEffectsEnemy" : [
     //{"effect" : "frostslow", "duration" : 5.0},
-    {"effect" : "ccnerfslow", "duration" : 5.0}
-  ]
+    {"effect" : "ccslowii", "duration" : 5.0}
+  ],
+  "statusEffectsAlly" : [
+  ],
+  "scripts" : ["/projectiles/activeitems/staff/ccstaffprojectile.lua"]
 }
