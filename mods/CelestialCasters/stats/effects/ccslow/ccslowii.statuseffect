@@ -1,7 +1,7 @@
 {
   "name" : "ccslowii",
   "effectConfig" : {
-    "colorWrap": "fade=33BBFF=0.3",
+    "colorWrap": "fade=00AAFF=0.3",
     "jumpModifier": -0.5, // 0 normal, -0.5 less
     "groundMovementModifier": 0.5,// 1 normal, 0.1 slow
     "speedModifier": 0.5, // 1 normal, 0.1 slow
