@@ -36,7 +36,6 @@
   },
 
   "statusEffectsEnemy" : [
-    //{"effect" : "frostslow", "duration" : 5.0},
     {"effect" : "ccslowii", "duration" : 5.0}
   ],
   "statusEffectsAlly" : [
