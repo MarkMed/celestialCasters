@@ -15,6 +15,6 @@
 
   "animationConfig" : "ccpoison.animation",
 
-  "label" : "Celestial Toxins",
+  "label" : "Celestial Toxins I",
   "icon" : "/interface/statuses/poison.png"
 }
