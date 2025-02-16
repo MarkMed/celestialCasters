@@ -1,0 +1,24 @@
+{
+  "name" : "ccfrostally",
+
+  "effectConfig" : {
+    "tickDamagePercentage": 0,
+    "tickTime": 10,
+    "colorWrap": "fade=00BBFF=0.1",
+    "jumpModifier": 0,
+    "groundMovementModifier": 1,
+    "speedModifier": 1,
+    "airJumpModifier": 1,
+		"extraArmorAmount" : 10
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccfrost.lua"
+  ],
+
+  "animationConfig" : "ccfrost.animation",
+
+  "label" : "Celestial Frost",
+  "icon" : "/interface/statuses/ice.png"
+}
