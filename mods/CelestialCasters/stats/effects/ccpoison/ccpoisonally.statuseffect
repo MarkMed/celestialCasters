@@ -1,0 +1,20 @@
+{
+  "name" : "ccpoisonally",
+
+  "effectConfig" : {
+    "tickDamagePercentage": 0,
+    "tickTime": 1,
+    "colorWrap": "fade=33FF33=0.2",
+    "healing": 0.05
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccpoison.lua"
+  ],
+
+  "animationConfig" : "ccpoison.animation",
+
+  "label" : "Celestial Toxins",
+  "icon" : "/interface/statuses/poison.png"
+}

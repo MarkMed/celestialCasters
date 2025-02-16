@@ -1,0 +1,21 @@
+{
+  "name" : "ccpoisoni",
+  "blockingStat" : "poisonStatusImmunity",
+
+  "effectConfig" : {
+    "tickDamagePercentage": 0.02,
+    "tickTime": 0.7,
+    "colorWrap": "fade=33FF33=0.3",
+    "healing": 0
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccpoison.lua"
+  ],
+
+  "animationConfig" : "ccpoison.animation",
+
+  "label" : "CC Poisoned I",
+  "icon" : "/interface/statuses/poison.png"
+}
