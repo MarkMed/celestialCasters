@@ -28,7 +28,7 @@
   ],
   "statusEffectsAlly": [
     {
-      "effect": "ccpoisonally",
+      "effect": "ccpoisonallyi",
       "duration": 3
     }
   ],

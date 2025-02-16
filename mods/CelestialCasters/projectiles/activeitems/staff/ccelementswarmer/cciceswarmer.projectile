@@ -28,7 +28,7 @@
   ],
   "statusEffectsAlly": [
     {
-      "effect": "ccfrostally",
+      "effect": "ccfrostallyi",
       "duration": 3
     }
   ],
