@@ -63,27 +63,23 @@
   "scripts": [
     "/projectiles/activeitems/staff/ccstaffprojectile.lua"
   ],
-  "controlMovement": {
-    "maxSpeed": 20,
-    "controlForce": 50
-  },
   "statusEffectsEnemy": [
     {
       "effect": "ccburningi",
-      "duration": 10
+      "duration": 3
     }
     
   ],
   "statusEffectsAlly": [
     {
-      "effect": "regenerationfast",
-      "duration" : 5
-    },
-    {
       "effect": "ccburningally",
-      "duration": 5
+      "duration": 3
     }
   ],
   "timeToLive": 10,
-  "bounces": 0
+  "bounces": 0,
+  "controlMovement": {
+    "maxSpeed": 20,
+    "controlForce": 50
+  }
 }
