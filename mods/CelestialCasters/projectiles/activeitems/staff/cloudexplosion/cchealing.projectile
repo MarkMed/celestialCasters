@@ -24,28 +24,13 @@
   "damagePoly" : [ [-30, -30], [-30, 30], [30, 30], [30, -30]  ],
   "flippable" : true,
 
-  //"damageType" : "ignoresdef",
-  //"damageType" : "NoDamage",
-  //"damageType" : "damage",
-  //"damageType" : "Environment",
   "damageType" : "Status",
-
-  //"damageKind" : "hidden",
-  //"damageKind" : "default",
   "damageKind" : "applystatus",
-
-  //"damageType": "damage",
-  //"damageKind": "default",
   
-  //"damageTeam" : { "type" : "enemy", "team" : 0 },
-  //"damageTeam" : { "type" : "indiscriminate" },
   "damageTeam": {
     "type": "friendly",
     "team": 0
   },
-  //"damageTeamType" : "passive",
-  //"damageTeam" : { "type" : "friendly" },
-  //"damageTeam" : { "type" : "ghostly" },
 
   "statusEffectsEnemy" : [
     {"effect" : "weakpoison", "duration" : 5}
