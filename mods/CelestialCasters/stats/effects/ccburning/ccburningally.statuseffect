@@ -1,6 +1,5 @@
 {
   "name": "ccburningally",
-  "blockingStat": "fireStatusImmunity",
   "defaultDuration": 2, // duración total del statFX
 
   "effectConfig": {
