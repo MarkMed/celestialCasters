@@ -1,7 +1,6 @@
 {
   "projectileName" : "ccpoisonswarmer",
   "physics" : "laser",
-  "timeToLive" : 3,
   "image" : "ccpoisonswarmer.png",
   "animationCycle" : 0.3,
   "lightColor" : [50, 70, 30],
@@ -16,15 +15,32 @@
   "speed" : 10,
   "power" : 30,
   "damageKind" : "poison",
-  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
-  "statusEffects" : [ "ccburningi" ],
+  "damagePoly" : [
+    [-0.7, 0], [0.7, 0], [0, -0.7], [0, 0.7],
+    [-0.4, 0.4], [0.4, 0.4], [-0.4, -0.4], [0.4, -0.4]
+  ],
+  "statusEffectsEnemy": [
+    {
+      "effect": "ccpoisoni",
+      "duration": 3
+    }
+    
+  ],
+  "statusEffectsAlly": [
+    {
+      "effect": "ccpoisonally",
+      "duration": 3
+    }
+  ],
 
   "fullbright" : true,
 
-  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+  "scripts" : [ "/projectiles/activeitems/staff/ccstaffprojectile.lua" ],
 
-  "controlMovement" : {
-    "maxSpeed" : 60,
-    "controlForce" : 40
+  "timeToLive": 10,
+  "bounces": 0,
+  "controlMovement": {
+    "maxSpeed": 20,
+    "controlForce": 50
   }
 }
