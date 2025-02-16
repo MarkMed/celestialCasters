@@ -1,0 +1,51 @@
+{
+	"name": "ccarmorupi",
+	"effectConfig": {
+		"extraArmorAmount": 20,
+		"colorWrap": "fade=BFBB00=0.2"
+	},
+	"defaultDuration": 10,
+	"scripts": [
+		"ccarmorup.lua"
+	],
+	"animationConfig": "ccarmorup.animation",
+	"label": "Celestial Armor I",
+	"icon": "/interface/statuses/defense2.png"
+	//"effectConfig": {
+	//"stats": [
+	//{"stat": "protection",
+	//"amount": 100,
+	//	"effectiveMultiplier": 2,
+	//	"duration": 5
+	//}
+	//{"stat": "maxHealth", "effectiveMultiplier": 1.15 },
+	//{"stat": "maxEnergy", "effectiveMultiplier": 1.2 },
+	//{"stat": "powerMultiplier", "effectiveMultiplier": 0.9 },
+	//{"stat": "noFood", "amount": 1 },
+	//{"stat": "foodDelta", "effectiveMultiplier": 0 },
+	//{"stat": "maxEnergy", "effectiveMultiplier": 1.25 },
+	//{"stat": "physicalResistance", "amount": -0.25 },
+	//{"stat": "iceResistance", "amount": 0.2 },
+	//{"stat": "fireResistance", "amount": -0.2 },
+	//{"stat": "electricResistance", "amount": -0.4 },
+	//{"stat": "breathProtection", "amount": 1 },
+	//{"stat": "wetImmunity", "amount": 1.0 },
+	//{"stat": "fireStatusImmunity", "amount": 1.0 },
+	//{"stat": "iceStatusImmunity", "amount": 1.0 },
+	//{"stat": "electricStatusImmunity", "amount": 1.0 },
+	//{"stat": "poisonStatusImmunity", "amount": 1.0 },
+	//{"stat": "energyRegenPercentageRate", "baseMultiplier": 0.8 },
+	//{"stat": "fallDamageMultiplier", "effectiveMultiplier": 0 },
+	//{"stat": "critChance", "amount": 2 },
+	//{"stat": "critDamage", "amount": 0.05 },
+	//]
+	//},
+	//"scripts": [
+	//	{
+	//		"script" : "/scripts/fr_scripts/healthRegen.lua",
+	//		"args" : {
+	//			"healingRate" : 0.003
+	//		}
+	//	}
+	//],
+}

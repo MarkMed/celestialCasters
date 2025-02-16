@@ -2,7 +2,7 @@
   "particleEmitters" : {
     "drips" : {
       "enabled" : true,
-      "emissionRate" : 10.0,
+      "emissionRate" : 7.0,
       "particles" : [
         {
           "particle" : {
@@ -15,7 +15,7 @@
             "position" : [0.0, -2.0],
             "offsetRegion" : [0, 0, 0, 0],
             "initialVelocity" : [0,-0.5],
-            "finalVelocity" : [2, 4],
+            "finalVelocity" : [1.5, 2],
             "approach" : [0, 5], // particle mov direction
             "timeToLive" : 0.9,
             "variance" : {
