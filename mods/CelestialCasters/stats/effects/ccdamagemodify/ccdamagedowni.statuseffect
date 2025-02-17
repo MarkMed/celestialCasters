@@ -1,0 +1,19 @@
+{
+  "name" : "ccdamagedowni",
+  "effectConfig" : {
+    "powerModifier" : 0.7,
+    // 0.50 half, 1.00 normal, 2.00 double,
+    "colorWrap": "fade=444444=0.4"
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "ccdamagemodify.lua"
+  ],
+
+  "animationConfig" : "ccdamageup.animation",
+
+  "label" : "CC Damage Down I",
+  //"icon" : "/stats/effects/ccdamagemodify/ccdamageupi.png"
+	"icon": "/interface/statuses/defense2.png"
+}
