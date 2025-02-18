@@ -1,7 +1,7 @@
 {
   "name" : "ccdamageupi",
   "effectConfig" : {
-    "powerModifier" : 1.30,
+    "powerModifier" : 1.25,
     // 0.50 half, 1.00 normal, 2.00 double,
     "colorWrap": "fade=444444=0.4"
   },

@@ -1,7 +1,7 @@
 {
-  "name" : "ccdamagedowni",
+  "name" : "ccdamagedownii",
   "effectConfig" : {
-    "powerModifier" : 0.75,
+    "powerModifier" : 0.50,
     // 0.50 half, 1.00 normal, 2.00 double,
     "colorWrap": "fade=444444=0.4"
   },
@@ -13,6 +13,6 @@
 
   "animationConfig" : "ccdamageup.animation",
 
-  "label" : "CC Damage Down I",
-  "icon" : "/stats/effects/ccdamagemodify/ccdamagedowni.png"
+  "label" : "CC Damage Down II",
+  "icon" : "/stats/effects/ccdamagemodify/ccdamagedownii.png"
 }
