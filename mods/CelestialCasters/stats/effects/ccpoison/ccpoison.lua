@@ -14,9 +14,9 @@ end
 
 function update(dt)
     -- Si el efecto de estado sigue activo y el jugador toca agua, se apaga
-    if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then
-        effect.expire()
-    end
+    -- if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then
+    --     effect.expire()
+    -- end
 
     self.tickTimer = self.tickTimer - dt
     
