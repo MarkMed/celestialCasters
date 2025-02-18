@@ -5,7 +5,7 @@
       "emissionRate" : 10.0,
       "particles" : [
         {
-          "particle" : "icetrail"
+          "particle" : "runboost"
         },
         {
           "particle" : {
@@ -17,9 +17,9 @@
             "destructionTime" : 0.8,
             "position" : [0.0, 0.0],
             "offsetRegion" : [0, 0, 0, 0],
-            "initialVelocity" : [0, -10.0],
-            "finalVelocity" : [0, -1.0],
-            "timeToLive" : 0.6
+            "initialVelocity" : [0, 2.0],
+            "finalVelocity" : [0, 10.0],
+            "timeToLive" : 0.4
           }
         }
       ]

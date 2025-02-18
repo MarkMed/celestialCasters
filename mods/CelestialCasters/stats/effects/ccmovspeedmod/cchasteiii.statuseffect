@@ -1,0 +1,20 @@
+{
+  "name" : "cchasteiii",
+  "effectConfig" : {
+    "colorWrap": "fade=00AAFF=0.3",
+    "jumpModifier": 1.1,
+    "groundMovementModifier": 1.75,
+    "speedModifier": 1.75,
+    "airJumpModifier": 1.1
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccmovspeedmod.lua"
+  ],
+
+  "animationConfig" : "cchaste.animation",
+
+  "label" : "Celestial Haste III",
+  "icon" : "/interface/statuses/haste.png"
+}

@@ -1,0 +1,28 @@
+{
+  "particleEmitters" : {
+    "icetrail" : {
+      "enabled" : true,
+      "emissionRate" : 10.0,
+      "particles" : [
+        {
+          "particle" : "icetrail"
+        },
+        {
+          "particle" : {
+            "type" : "ember",
+            "size" : 2.0,
+            "color" : [143, 225, 255, 150],
+            "fade" : 0.7,
+            "destructionAction" : "shrink",
+            "destructionTime" : 1,
+            "position" : [0.0, 0.0],
+            "offsetRegion" : [0, 0, 0, 0],
+            "initialVelocity" : [0, 0.0],
+            "finalVelocity" : [0, -0.5],
+            "timeToLive" : 0.8
+          }
+        }
+      ]
+    }
+  }
+}
