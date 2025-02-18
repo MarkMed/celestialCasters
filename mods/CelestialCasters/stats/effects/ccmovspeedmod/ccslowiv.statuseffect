@@ -1,0 +1,20 @@
+{
+  "name" : "ccslowiv",
+  "effectConfig" : {
+    "colorWrap": "fade=00AAFF=0.7",
+    "jumpModifier": 0.08,
+    "groundMovementModifier": 0.08,
+    "speedModifier": 0.08,
+    "airJumpModifier": 0.08
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccmovspeedmod.lua"
+  ],
+
+  "animationConfig" : "ccslow.animation",
+
+  "label" : "CC Slow IV",
+  "icon" : "/interface/statuses/slow.png"
+}

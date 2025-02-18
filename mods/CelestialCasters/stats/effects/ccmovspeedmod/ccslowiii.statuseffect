@@ -1,0 +1,20 @@
+{
+  "name" : "ccslowiii",
+  "effectConfig" : {
+    "colorWrap": "fade=00AAFF=0.2",
+    "jumpModifier": 0.25,
+    "groundMovementModifier": 0.25,
+    "speedModifier": 0.25,
+    "airJumpModifier": 0.25
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccmovspeedmod.lua"
+  ],
+
+  "animationConfig" : "ccslow.animation",
+
+  "label" : "CC Slow III",
+  "icon" : "/interface/statuses/slow.png"
+}
