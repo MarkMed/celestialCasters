@@ -1,0 +1,18 @@
+{
+  "name" : "cchealingiii",
+  "effectConfig" : {
+    "healAmount" : 50, // amount of healing in HP% to restore
+    "emissionRate" : 10,
+    "isInstant": false
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "cchealing.lua"
+  ],
+
+  "animationConfig" : "cchealing.animation",
+
+  "label" : "Celestial Healing III",
+  "icon" : "/interface/statuses/heal.png"
+}
