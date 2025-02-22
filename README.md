@@ -16,13 +16,10 @@ v1.0 → Design and animations for Spells
 
 v2.0 → Wands, Staffs, more abilities
 
-v3.0 → Unique abilities (Hex, Living Armor, ShadowWave, Shackles, etc)
+v3.0 → Unique abilities ([Hex](https://dota2.fandom.com/wiki/Lion#Hex), [ShadowWave](https://dota2.fandom.com/wiki/Dazzle#Shadow_Wave), [Leech Seed](https://dota2.fandom.com/wiki/Treant_Protector#Leech_Seed), [Living Armor](https://dota2.fandom.com/wiki/Treant_Protector#Living_Armor), [Life Drain](https://dota2.fandom.com/wiki/Pugna#Life_Drain), and others)
 
 v4.0 → Crafter, more unique abilities and weapons
 
 v5.0 → Armors with passives.
 
 v5+ → more abilities, weapons, armors, designs, animations, etc
-
----
-Advanced arsenal with custom spells [POLYMORPH/Hex](https://static.wikia.nocookie.net/dota2_gamepedia/images/2/29/Fin_King%27s_Charm_Hex.gif/revision/latest/scale-to-width-down/340?cb=20140616234511), [ShadowWave](https://static.wikia.nocookie.net/dota2_gamepedia/images/9/93/Darkclaw_Emissary_Shadow_Wave.gif/revision/latest?cb=20160218233404), Leech Seed, and others
