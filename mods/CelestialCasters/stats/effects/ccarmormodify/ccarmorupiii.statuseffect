@@ -11,5 +11,5 @@
 	],
 	"animationConfig": "ccarmorup.animation",
 	"label": "Celestial Armor III",
-	"icon": "/interface/statuses/defense2.png"
+  	"icon" : "/stats/effects/ccarmormodify/ccarmorupiii.png"
 }
