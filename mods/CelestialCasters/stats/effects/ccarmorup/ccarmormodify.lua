@@ -1,8 +1,8 @@
 
 function update(dt)
-    mcontroller.controlModifiers({
-        airJumpModifier = 0.9
-    })
+    -- mcontroller.controlModifiers({
+    --     airJumpModifier = 0.9
+    -- })
 end
 
 function init()
@@ -11,18 +11,9 @@ function init()
     effect.setParentDirectives(config.getParameter("colorWrap", "fade=e0e0e0=0.2"))
     
     -- status.setResource("energyRegenBlock", 1.0) -- prevents energy regen
-
-    effect.addStatModifierGroup({
-        {
-            stat = "jumpModifier",
-            amount = -0.1
-        },
-        {
-            stat = "protection",
-            amount = config.getParameter("extraArmorAmount", 10) -- 10 default extra armor?
-        }
-        -- effect.addStatModifierGroup({{stat = "fireResistance", amount = 0.25}, {stat = "fireStatusImmunity", amount = 1}})
-    })
+    self.armorAmount = config.getParameter("extraArmorAmount", 10)
+    self.jumpModifier = config.getParameter("jumpModifier", -0.1)
+    modifyArmor(self.armorAmount, self.jumpModifier)
 end
 
 function uninit()
@@ -33,4 +24,17 @@ function uninit()
     -- end
     -- genericStatHandler=nil
     -- if oldUninitStatApplier then oldUninitStatApplier() end
+end
+
+function modifyArmor(armorAmount, jumpModifier)
+    effect.addStatModifierGroup({
+        {
+            stat = "jumpModifier",
+            amount = jumpModifier
+        },
+        {
+            stat = "protection",
+            amount1 = armorAmount
+        }
+    })
 end
