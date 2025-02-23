@@ -18,7 +18,7 @@ function init()
   end
   
   function update(dt)
-	if self.isInstant then
+	if not self.isInstant then
 		addHealt(self.healingRate * dt)
 	end
   end
