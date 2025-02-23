@@ -3,7 +3,7 @@
 	"effectConfig": {
 		"extraArmorAmount": -20,
 		"jumpModifier": 0.1,
-		"colorWrap": "fade=BFBBBB=0.2"
+		"colorWrap": "fade=BBBBBF=0.2"
 	},
 	"defaultDuration": 10,
 	"scripts": [
