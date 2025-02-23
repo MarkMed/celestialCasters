@@ -34,7 +34,7 @@ function modifyArmor(armorAmount, jumpModifier)
         },
         {
             stat = "protection",
-            amount1 = armorAmount
+            amount = armorAmount
         }
     })
 end
