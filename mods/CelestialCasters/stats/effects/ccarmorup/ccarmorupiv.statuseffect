@@ -1,15 +1,15 @@
 {
-	"name": "ccarmorupii",
+	"name": "ccarmorupiv",
 	"effectConfig": {
-		"extraArmorAmount": 40,
-		"jumpModifier": -0.2,
-		"colorWrap": "fade=BFBBBB=0.3"
+		"extraArmorAmount": 160,
+		"jumpModifier": -0.5,
+		"colorWrap": "fade=BFBBBB=0.6"
 	},
 	"defaultDuration": 10,
 	"scripts": [
 		"ccarmormodify.lua"
 	],
 	"animationConfig": "ccarmorup.animation",
-	"label": "Celestial Armor II",
+	"label": "Celestial Armor IV",
 	"icon": "/interface/statuses/defense2.png"
 }
