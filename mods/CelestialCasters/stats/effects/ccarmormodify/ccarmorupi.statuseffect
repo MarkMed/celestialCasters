@@ -2,15 +2,16 @@
 	"name": "ccarmorupi",
 	"effectConfig": {
 		"extraArmorAmount": 20,
-		"colorWrap": "fade=BFBB00=0.2"
+		"jumpModifier": -0.1,
+		"colorWrap": "fade=BBBBBF=0.2"
 	},
 	"defaultDuration": 10,
 	"scripts": [
-		"ccarmorup.lua"
+		"ccarmormodify.lua"
 	],
 	"animationConfig": "ccarmorup.animation",
 	"label": "Celestial Armor I",
-	"icon": "/interface/statuses/defense2.png"
+  	"icon" : "/stats/effects/ccarmormodify/ccarmorupi.png"
 	//"effectConfig": {
 	//"stats": [
 	//{"stat": "protection",

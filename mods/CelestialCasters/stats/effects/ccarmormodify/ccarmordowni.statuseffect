@@ -1,0 +1,15 @@
+{
+	"name": "ccarmordowni",
+	"effectConfig": {
+		"extraArmorAmount": -20,
+		"jumpModifier": 0.1,
+		"colorWrap": "fade=BBBBBF=0.2"
+	},
+	"defaultDuration": 10,
+	"scripts": [
+		"ccarmormodify.lua"
+	],
+	"animationConfig": "ccarmorup.animation",
+	"label": "CC Armor Down I",
+  	"icon" : "/stats/effects/ccarmormodify/ccarmordowni.png"
+}
