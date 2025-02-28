@@ -5,7 +5,7 @@
 	"level": 1,
 	"rarity": "common",
 	"description": "",
-	"shortdescription": "MkM C-Fire Spell",
+	"shortdescription": "Fire Spell",
 	"category": "Spell Casting",
 	"twoHanded": false,
 	"itemTags": [
@@ -32,12 +32,12 @@
 		"/items/active/weapons/staff/staff.lua"
 	],
 	"elementalType": "fire",
+	"primaryAbilityType": "ccfirei",
+	"primaryAbility": {},
 	//"primaryAbility" : {},
 	//"elementalType" : "fire",
 	//"primaryAbilityType" : "healingzone",
 	//"primaryAbility" : {},
-	"primaryAbilityType": "ccfirei",
-	"primaryAbility": {},
 	//"altAbilityType": "elementportal",
 	//"altAbility": {
 	//"type" : "shackles",
