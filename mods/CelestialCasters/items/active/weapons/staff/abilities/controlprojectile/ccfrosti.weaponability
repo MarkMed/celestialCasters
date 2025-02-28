@@ -1,0 +1,35 @@
+{
+	"ability": {
+		"type": "ccfrosti",
+		"name": "Celestial Frost I",
+		"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+		"class" : "ControlProjectile",	
+		arreglar efecto de estado CCFrost (retirar modificación de armardura en frost)
+		"projectileCount" : 1,
+		"projectileDistance" : 0.5,
+		"energyCost": 30,
+		"maxCastRange": 10,
+		"projectileType": "cciceswarmer",
+		"projectileParameters": {
+			"baseDamage" : 4,
+			"knockback": 20,
+			"statusEffectsEnemy": [
+				{
+					"effect": "ccfrosti",
+					"duration": 3
+				}
+			],
+			"statusEffectsAlly": [
+				{
+					"effect": "ccfrostallyi",
+					"duration": 3
+				},
+				{
+					"effect": "ccarmorupi", arreglar ccarmorupi?
+					"duration": 3
+				}
+			]
+		}
+	
+	}
+}
