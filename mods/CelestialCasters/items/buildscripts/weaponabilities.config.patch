@@ -3,5 +3,8 @@
 	{"op": "add", "path": "/ccslow", "value": "/items/active/weapons/staff/abilities/cloudexplosion/ccslow.weaponability"},
 	{"op": "add", "path": "/elembreath", "value": "/items/active/weapons/staff/abilities/elembreath/elembreath.weaponability"},
 	{"op": "add", "path": "/armorupzone", "value": "/items/active/weapons/staff/abilities/controlprojectile/armorupzone.weaponability"},
-	{"op": "add", "path": "/flamewand2", "value": "/items/active/weapons/staff/abilities/controlprojectile/flamewand2.weaponability"}
+	{"op": "add", "path": "/ccfirei", "value": "/items/active/weapons/staff/abilities/controlprojectile/ccfirei.weaponability"},
+	{"op": "add", "path": "/cctoxinsi", "value": "/items/active/weapons/staff/abilities/controlprojectile/cctoxinsi.weaponability"},
+	{"op": "add", "path": "/ccfrosti", "value": "/items/active/weapons/staff/abilities/controlprojectile/ccfrosti.weaponability"},
+	{"op": "add", "path": "/ccelectrici", "value": "/items/active/weapons/staff/abilities/controlprojectile/ccelectrici.weaponability"}
 ]
