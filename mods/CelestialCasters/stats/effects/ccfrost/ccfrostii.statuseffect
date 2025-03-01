@@ -1,15 +1,15 @@
 {
-  "name" : "ccfrosti",
+  "name" : "ccfrostii",
   "blockingStat" : "iceStatusImmunity",
 
   "effectConfig" : {
-    "tickDamagePercentage": 0.005,
+    "tickDamagePercentage": 0.007,
     "tickTime": 0.2,
-    "colorWrap": "fade=00BBFF=0.2",
-    "jumpModifier": -0.3,
+    "colorWrap": "fade=00BBFF=0.3",
+    "jumpModifier": -0.4,
     "groundMovementModifier": 0.3,
-    "speedModifier": 0.7,
-    "airJumpModifier": 0.7
+    "speedModifier": 0.5,
+    "airJumpModifier": 0.5
   },
   "defaultDuration" : 5,
 
@@ -19,6 +19,6 @@
 
   "animationConfig" : "ccfrost.animation",
 
-  "label" : "CC Frost I",
+  "label" : "CC Frost II",
   "icon" : "/interface/statuses/ice.png"
 }

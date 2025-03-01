@@ -1,0 +1,21 @@
+{
+  "name" : "ccelectrifiedii",
+  "blockingStat" : "electricStatusImmunity",
+
+  "effectConfig" : {
+    "boltInterval" : 0.3,
+    "jumpDistance" : 8,
+    "healthDamageFactor" : 0.08,
+    "damageClampRange" : [5, 15] // min, max
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ccelectrified.lua"
+  ],
+
+  "animationConfig" : "ccelectrified.animation",
+
+  "label" : "CC Electrified I",
+  "icon" : "/interface/statuses/electric.png"
+}

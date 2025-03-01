@@ -1,11 +1,11 @@
 {
-	"itemName": "frostspell",
+	"itemName": "electricspell",
 	"price": 440,
 	"maxStack": 1,
 	"level": 1,
 	"rarity": "common",
 	"description": "",
-	"shortdescription": "Frost Spell",
+	"shortdescription": "Electric Spell",
 	"category": "Spell Casting",
 	"twoHanded": false,
 	"itemTags": [
@@ -13,11 +13,11 @@
 		"wand",
 		"staff",
 		"spell",
-		"frost"
+		"electric"
 	],
 	"inventoryIcon": [
 		{
-			"image": "/interface/statuses/ice.png"
+			"image": "/interface/statuses/electric.png"
 		}
 	],
 	"tooltipKind": "staff",
@@ -25,14 +25,14 @@
 		"stone": "",
 		"handle": "",
 		"crown": "",
-		"chargeEffect": "/items/active/weapons/wand/generated/glow/ice.png"
+		"chargeEffect": "/items/active/weapons/wand/generated/glow/electric.png"
 	},
 	"animation": "/items/active/weapons/wand/wand.animation",
 	"scripts": [
 		"/items/active/weapons/staff/staff.lua"
 	],
-	"elementalType": "ice",
-	"primaryAbilityType": "ccfrosti",
+	"elementalType": "electric",
+	"primaryAbilityType": "ccelectrici",
 	"primaryAbility": {},
 	"stances": {
 		"idle": {
