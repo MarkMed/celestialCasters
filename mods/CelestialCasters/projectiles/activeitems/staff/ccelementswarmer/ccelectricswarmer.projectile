@@ -18,6 +18,9 @@
   ],
   "speed": 10,
   "power": 30,
+  "damageTeam": {
+    "type": "friendly"
+  },
   "damageKind": "electric",
   "damagePoly": [
     [
