@@ -9,8 +9,7 @@
     "jumpModifier": -0.4,
     "groundMovementModifier": 0.3,
     "speedModifier": 0.5,
-    "airJumpModifier": 0.5,
-		"extraArmorAmount" : -20
+    "airJumpModifier": 0.5
   },
   "defaultDuration" : 5,
 
@@ -20,6 +19,6 @@
 
   "animationConfig" : "ccfrost.animation",
 
-  "label" : "CC Frost I",
+  "label" : "CC Frost II",
   "icon" : "/interface/statuses/ice.png"
 }

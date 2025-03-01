@@ -4,7 +4,6 @@
 		"name": "Celestial Frost I",
 		"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
 		"class" : "ControlProjectile",	
-		arreglar efecto de estado CCFrost (retirar modificación de armardura en frost)
 		"projectileCount" : 1,
 		"projectileDistance" : 0.5,
 		"energyCost": 30,
@@ -17,6 +16,10 @@
 				{
 					"effect": "ccfrosti",
 					"duration": 3
+				},
+				{
+					"effect": "ccarmordowni",
+					"duration": 3
 				}
 			],
 			"statusEffectsAlly": [
@@ -25,7 +28,7 @@
 					"duration": 3
 				},
 				{
-					"effect": "ccarmorupi", arreglar ccarmorupi?
+					"effect": "ccarmorupi",
 					"duration": 3
 				}
 			]

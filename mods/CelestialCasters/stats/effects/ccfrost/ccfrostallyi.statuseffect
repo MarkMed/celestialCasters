@@ -8,8 +8,7 @@
     "jumpModifier": 0,
     "groundMovementModifier": 1,
     "speedModifier": 1,
-    "airJumpModifier": 1,
-		"extraArmorAmount" : 10
+    "airJumpModifier": 1
   },
   "defaultDuration" : 5,
 

@@ -14,10 +14,6 @@ function init()
       {
         stat = "jumpModifier",
         amount = config.getParameter("jumpModifier", -0.15)
-      },
-      {
-          stat = "protection",
-          amount = config.getParameter("extraArmorAmount", 0)
       }
     })
 end
