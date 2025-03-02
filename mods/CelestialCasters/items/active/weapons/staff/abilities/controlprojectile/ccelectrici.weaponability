@@ -23,10 +23,6 @@
 				{
 					"effect": "ccelectrifiedi",
 					"duration": 3
-				},
-				{
-					"effect": "cchastei",
-					"duration": 3
 				}
 			]
 		}
