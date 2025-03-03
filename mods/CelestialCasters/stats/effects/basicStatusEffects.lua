@@ -40,3 +40,30 @@ function BasicStatusEffects.ArmorModify.modifyArmor(armorAmount)
         amount = armorAmount
     }})
 end
+
+-- Movement Speed Modify
+BasicStatusEffects.MovementSpeedModify = {
+    groundMovementModifier = 1,
+    speedModifier = 1,
+    airJumpModifier = 1,
+    jumpModifier = 1
+}
+function BasicStatusEffects.MovementSpeedModify.init(config)
+    BasicStatusEffects.MovementSpeedModify.groundMovementModifier = config.getParameter("groundMovementModifier", 1)
+    BasicStatusEffects.MovementSpeedModify.speedModifier = config.getParameter("speedModifier", 1)
+    BasicStatusEffects.MovementSpeedModify.airJumpModifier = config.getParameter("airJumpModifier", 1)
+    BasicStatusEffects.MovementSpeedModify.jumpModifier = config.getParameter("jumpModifier", 1)
+    effect.addStatModifierGroup({
+        {
+          stat = "jumpModifier",
+          amount = BasicStatusEffects.MovementSpeedModify.jumpModifier
+        }
+      })
+end
+function BasicStatusEffects.MovementSpeedModify.update(dt)
+    mcontroller.controlModifiers({
+        groundMovementModifier = BasicStatusEffects.MovementSpeedModify.groundMovementModifier,
+        speedModifier = BasicStatusEffects.MovementSpeedModify.speedModifier,
+        airJumpModifier = BasicStatusEffects.MovementSpeedModify.airJumpModifier
+    })
+end
