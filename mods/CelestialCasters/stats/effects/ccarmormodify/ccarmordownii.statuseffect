@@ -1,9 +1,12 @@
 {
 	"name": "ccarmordownii",
 	"effectConfig": {
-		"extraArmorAmount": -40,
-		"jumpModifier": 0.2,
-		"colorWrap": "fade=BBBBBF=0.4"
+		"armorAmount": -50,
+		"colorWrap": "fade=BBBBBF=0.4",
+		"jumpModifier": 1.2,
+		"groundMovementModifier": 1.2,
+		"speedModifier": 1.2,
+		"airJumpModifier": 1.2
 	},
 	"defaultDuration": 10,
 	"scripts": [

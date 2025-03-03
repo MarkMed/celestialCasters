@@ -1,9 +1,12 @@
 {
 	"name": "ccarmorupiv",
 	"effectConfig": {
-		"extraArmorAmount": 160,
-		"jumpModifier": -0.5,
-		"colorWrap": "fade=BBBBBF=0.8"
+		"armorAmount": 200,
+		"colorWrap": "fade=BBBBBF=0.8",
+		"jumpModifier": 0.6,
+		"groundMovementModifier": 0.6,
+		"speedModifier": 0.6,
+		"airJumpModifier": 0.6
 	},
 	"defaultDuration": 10,
 	"scripts": [
