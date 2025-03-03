@@ -4,7 +4,7 @@
   "defaultDuration": 2, // duración total del statFX
 
   "effectConfig": {
-    "tickDamage": 5,
+    "tickDamage": 3,
     "tickTime": 0.1,
     "damageModifier": 0,
     "damageSourceKind": "fire",
