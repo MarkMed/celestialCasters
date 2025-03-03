@@ -45,20 +45,12 @@ end
 BasicStatusEffects.MovementSpeedModify = {
     groundMovementModifier = 1,
     speedModifier = 1,
-    airJumpModifier = 1,
-    jumpModifier = 1
+    airJumpModifier = 1
 }
 function BasicStatusEffects.MovementSpeedModify.init(config)
     BasicStatusEffects.MovementSpeedModify.groundMovementModifier = config.getParameter("groundMovementModifier", 1)
     BasicStatusEffects.MovementSpeedModify.speedModifier = config.getParameter("speedModifier", 1)
     BasicStatusEffects.MovementSpeedModify.airJumpModifier = config.getParameter("airJumpModifier", 1)
-    BasicStatusEffects.MovementSpeedModify.jumpModifier = config.getParameter("jumpModifier", 1)
-    effect.addStatModifierGroup({
-        {
-          stat = "jumpModifier",
-          amount = BasicStatusEffects.MovementSpeedModify.jumpModifier
-        }
-      })
 end
 function BasicStatusEffects.MovementSpeedModify.update(dt)
     mcontroller.controlModifiers({
@@ -66,4 +58,54 @@ function BasicStatusEffects.MovementSpeedModify.update(dt)
         speedModifier = BasicStatusEffects.MovementSpeedModify.speedModifier,
         airJumpModifier = BasicStatusEffects.MovementSpeedModify.airJumpModifier
     })
+end
+
+-- Jump Modify
+BasicStatusEffects.JumpModify = {
+    jumpModifier = 1
+}
+function BasicStatusEffects.JumpModify.init(config)
+    BasicStatusEffects.JumpModify.jumpModifier = config.getParameter("jumpModifier", 1)
+    effect.addStatModifierGroup({{
+        stat = "jumpModifier",
+        amount = BasicStatusEffects.JumpModify.jumpModifier
+    }})
+end
+
+-- Damage Modify
+BasicStatusEffects.DamageModify = {
+    damageModifier = 1 -- n power multiplier -> 1 = +100% damage, 0.5 = +50% damage, 2 = +200% damage
+}
+function BasicStatusEffects.DamageModify.init(config)
+    BasicStatusEffects.DamageModify.damageModifier = config.getParameter("damageModifier", 1)
+    effect.addStatModifierGroup({{
+        stat = "powerMultiplier",
+        amount = BasicStatusEffects.DamageModify.damageModifier
+    }})
+end
+
+-- Damage per tick
+BasicStatusEffects.DamagePerTick = {
+    tickDamage = 0,
+    tickTime = 1,
+    tickTimer = 0,
+    damageSourceKind = "fire"
+}
+function BasicStatusEffects.DamagePerTick.init(config)
+    BasicStatusEffects.DamagePerTick.tickDamage = config.getParameter("tickDamage", 0) -- damage amount per tick to apply directly to the target
+    BasicStatusEffects.DamagePerTick.tickTime = config.getParameter("tickTime", 1) -- number of seconds between ticks -> 1 = 1 tick per second, 0.5 = 2 ticks per second
+    BasicStatusEffects.DamagePerTick.tickTimer = BasicStatusEffects.DamagePerTick.tickTime
+    BasicStatusEffects.DamagePerTick.damageSourceKind = config.getParameter("damageSourceKind", "fire") -- get the damage source kind from the config or "fire" by default
+end
+function BasicStatusEffects.DamagePerTick.update(dt)
+    BasicStatusEffects.DamagePerTick.tickTimer = BasicStatusEffects.DamagePerTick.tickTimer - dt
+    if BasicStatusEffects.DamagePerTick.tickTimer <= 0 then
+        BasicStatusEffects.DamagePerTick.tickTimer = BasicStatusEffects.DamagePerTick.tickTime
+        status.applySelfDamageRequest({
+            damageType = "IgnoresDef",
+            damage = BasicStatusEffects.DamagePerTick.tickDamage,
+            damageSourceKind = BasicStatusEffects.DamagePerTick.damageSourceKind,
+            sourceEntityId = entity.id()
+        })
+    end
 end
