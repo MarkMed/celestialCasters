@@ -28,6 +28,7 @@ end
 
 -- Armor Modify
 BasicStatusEffects.ArmorModify = {
+    -- armorAmount = 1 -- percentage multiplier -> 0.5 = 50% armor, 2 = 200% armor, -2 = -200% armor
     armorAmount = 0
 }
 function BasicStatusEffects.ArmorModify.init(config)
@@ -37,6 +38,7 @@ end
 function BasicStatusEffects.ArmorModify.modifyArmor(armorAmount)
     effect.addStatModifierGroup({{
         stat = "protection",
+        -- effectiveMultiplier = armorAmount -- error while using amount with negative values lower than -205 wtf
         amount = armorAmount
     }})
 end
