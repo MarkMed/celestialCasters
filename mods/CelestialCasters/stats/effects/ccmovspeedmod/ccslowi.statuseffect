@@ -2,7 +2,6 @@
   "name" : "ccslowi",
   "effectConfig" : {
     "colorWrap": "fade=00AAFF=0.2",
-    "jumpModifier": 0.75,
     "groundMovementModifier": 0.75,
     "speedModifier": 0.75,
     "airJumpModifier": 0.75
