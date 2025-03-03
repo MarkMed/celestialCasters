@@ -1,8 +1,7 @@
 {
   "name" : "ccdamagedowniv",
   "effectConfig" : {
-    "powerModifier" : 0,
-    // 0.50 half, 1.00 normal, 2.00 double,
+    "damageModifier" : -5,
     "colorWrap": "fade=444444=0.4"
   },
   "defaultDuration" : 15,
