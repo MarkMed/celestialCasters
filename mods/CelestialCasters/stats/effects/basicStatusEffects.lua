@@ -43,9 +43,9 @@ end
 
 -- Movement Speed Modify
 BasicStatusEffects.MovementSpeedModify = {
-    groundMovementModifier = 1,
-    speedModifier = 1,
-    airJumpModifier = 1
+    groundMovementModifier = 1, -- 0.5 = 50% speed, 2 = 200% speed
+    speedModifier = 1, -- 0.5 = 50% speed, 2 = 200% speed
+    airJumpModifier = 1 -- 0.5 = 50% speed, 2 = 200% speed
 }
 function BasicStatusEffects.MovementSpeedModify.init(config)
     BasicStatusEffects.MovementSpeedModify.groundMovementModifier = config.getParameter("groundMovementModifier", 1)
@@ -62,7 +62,7 @@ end
 
 -- Jump Modify
 BasicStatusEffects.JumpModify = {
-    jumpModifier = 1
+    jumpModifier = 1 -- 0.5 = 50% jump, 2 = 200% jump
 }
 function BasicStatusEffects.JumpModify.init(config)
     BasicStatusEffects.JumpModify.jumpModifier = config.getParameter("jumpModifier", 1)
