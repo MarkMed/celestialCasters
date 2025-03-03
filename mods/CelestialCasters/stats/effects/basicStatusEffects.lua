@@ -74,7 +74,7 @@ end
 
 -- Damage Modify
 BasicStatusEffects.DamageModify = {
-    damageModifier = 1 -- n power multiplier -> 1 = +100% damage, 0.5 = +50% damage, 2 = +200% damage
+    damageModifier = 1 -- n power multiplier -> -0.5 = -50% damage, 1 = +100% damage, 0.5 = +50% damage, 2 = +200% damage
 }
 function BasicStatusEffects.DamageModify.init(config)
     BasicStatusEffects.DamageModify.damageModifier = config.getParameter("damageModifier", 1)
