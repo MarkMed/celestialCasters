@@ -2,10 +2,12 @@
   "name" : "ccpoisonallyi",
 
   "effectConfig" : {
-    "tickDamagePercentage": 0,
-    "tickTime": 1,
-    "colorWrap": "fade=33FF33=0.2",
-    "healing": 0.05
+    "colorWrap": "fade=33FF33=0.3",
+    "tickDamage": 0,
+    "tickTime": 3,
+    "damageSourceKind": "poison",
+    "healAmount" : 10,
+    "isInstant": false
   },
   "defaultDuration" : 5,
 
