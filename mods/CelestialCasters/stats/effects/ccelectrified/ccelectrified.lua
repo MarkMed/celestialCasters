@@ -1,4 +1,5 @@
 require "/scripts/util.lua"
+require "/stats/effects/basicStatusEffects.lua"
 
 function init()
   animator.setParticleEmitterOffsetRegion("sparks", mcontroller.boundBox())
@@ -11,9 +12,15 @@ function init()
 
   self.tickTime = config.getParameter("boltInterval", 1.0)
   self.tickTimer = self.tickTime
+  BasicStatusEffects.MovementSpeedModify.init(config)
+  BasicStatusEffects.JumpModify.init(config)
 end
 
 function update(dt)
+  local speedMod = config.getParameter("speedModifier", 1)
+  if(speedMod > 1) then
+    BasicStatusEffects.MovementSpeedModify.update(dt)
+  end
   self.tickTimer = self.tickTimer - dt
   local boltPower = util.clamp(status.resourceMax("health") * config.getParameter("healthDamageFactor", 1.0), self.damageClampRange[1], self.damageClampRange[2])
   if self.tickTimer <= 0 then
@@ -28,7 +35,11 @@ function update(dt)
     for i,id in ipairs(targetIds) do
       local sourceEntityId = effect.sourceEntity() or entity.id()
       if not world.lineTileCollision(mcontroller.position(), world.entityPosition(id)) then
-        local sourceDamageTeam = {type = "friendly", team = 0}--world.entityDamageTeam(sourceEntityId)
+        if(speedMod < 1) then
+          BasicStatusEffects.MovementSpeedModify.update(dt)
+        end
+        -- local sourceDamageTeam = world.entityDamageTeam(sourceEntityId)
+        local sourceDamageTeam = {type = "friendly", team = 0}
         local directionTo = world.distance(world.entityPosition(id), mcontroller.position())
         world.spawnProjectile(
           "teslaboltsmall",

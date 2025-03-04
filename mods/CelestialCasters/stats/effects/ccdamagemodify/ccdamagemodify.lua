@@ -1,11 +1,11 @@
+require "/stats/effects/basicStatusEffects.lua"
 function init()
-  --Power
-  self.powerModifier = config.getParameter("powerModifier", 1)
-  effect.addStatModifierGroup({{stat = "powerMultiplier", effectiveMultiplier = self.powerModifier}})
 
   local enableParticles = config.getParameter("particles", true)
   animator.setParticleEmitterOffsetRegion("embers", mcontroller.boundBox())
   animator.setParticleEmitterActive("embers", enableParticles)
+
+  BasicStatusEffects.DamageModify.init(config)
 end
 
 

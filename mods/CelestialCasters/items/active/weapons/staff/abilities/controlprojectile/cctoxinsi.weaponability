@@ -23,10 +23,6 @@
 				{
 					"effect": "ccpoisonallyi",
 					"duration": 3
-				},
-				{
-					"effect": "cchealingi",
-					"duration": 3
 				}
 			]
 		}

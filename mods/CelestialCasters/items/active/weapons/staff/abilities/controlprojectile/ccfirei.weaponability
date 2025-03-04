@@ -25,10 +25,6 @@
 				{
 					"effect": "ccburningallyi",
 					"duration": 3
-				},
-				{
-					"effect": "ccdamageupi",
-					"duration": 3
 				}
 			]
 		}

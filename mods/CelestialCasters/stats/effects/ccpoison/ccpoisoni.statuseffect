@@ -3,10 +3,12 @@
   "blockingStat" : "poisonStatusImmunity",
 
   "effectConfig" : {
-    "tickDamagePercentage": 0.02,
-    "tickTime": 0.7,
     "colorWrap": "fade=33FF33=0.3",
-    "healing": 0
+    "tickDamage": 6,
+    "tickTime": 0.5,
+    "damageSourceKind": "poison",
+    "healAmount" : 0,
+    "isInstant": false
   },
   "defaultDuration" : 5,
 

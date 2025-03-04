@@ -4,9 +4,13 @@
 
   "effectConfig" : {
     "boltInterval" : 0.3,
-    "jumpDistance" : 8,
+    "jumpDistance" : 10,
     "healthDamageFactor" : 0.08,
-    "damageClampRange" : [5, 15] // min, max
+    "damageClampRange" : [5, 15],
+		"jumpModifier": 0.4,
+		"groundMovementModifier": 0.4,
+		"speedModifier": 0.4,
+		"airJumpModifier": 0.4
   },
   "defaultDuration" : 5,
 

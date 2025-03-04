@@ -3,8 +3,10 @@
   "defaultDuration": 2, // duración total del statFX
 
   "effectConfig": {
-    "tickDamagePercentage": 0,
-    "tickTime": 10,
+    "tickDamage": 0,
+    "tickTime": 3,
+    "damageModifier": 0.5,
+    "damageSourceKind": "fire",
     "colorWrap": "fade=BFBB00=0.2"
   },
 

@@ -2,13 +2,15 @@
   "name" : "ccfrostallyi",
 
   "effectConfig" : {
-    "tickDamagePercentage": 0,
-    "tickTime": 10,
-    "colorWrap": "fade=00BBFF=0.1",
-    "jumpModifier": 0,
-    "groundMovementModifier": 1,
-    "speedModifier": 1,
-    "airJumpModifier": 1
+    "tickDamage": 0,
+    "tickTime": 3,
+    "colorWrap": "fade=00BBFF=0.2",
+    "jumpModifier": 0.9,
+    "damageSourceKind": "ice",
+    "groundMovementModifier": 0.9,
+    "speedModifier": 0.9,
+    "airJumpModifier": 0.9,
+    "armorAmount": 20
   },
   "defaultDuration" : 5,
 

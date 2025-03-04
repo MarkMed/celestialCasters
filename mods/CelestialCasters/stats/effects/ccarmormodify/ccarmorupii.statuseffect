@@ -1,9 +1,12 @@
 {
 	"name": "ccarmorupii",
 	"effectConfig": {
-		"extraArmorAmount": 40,
-		"jumpModifier": -0.2,
-		"colorWrap": "fade=BBBBBF=0.4"
+		"armorAmount": 50,
+		"colorWrap": "fade=BBBBBF=0.4",
+		"jumpModifier": 0.8,
+		"groundMovementModifier": 0.8,
+		"speedModifier": 0.8,
+		"airJumpModifier": 0.8
 	},
 	"defaultDuration": 10,
 	"scripts": [

@@ -3,13 +3,15 @@
   "blockingStat" : "iceStatusImmunity",
 
   "effectConfig" : {
-    "tickDamagePercentage": 0.005,
-    "tickTime": 0.2,
+    "tickDamage": 10,
+    "tickTime": 1,
     "colorWrap": "fade=00BBFF=0.2",
-    "jumpModifier": -0.3,
-    "groundMovementModifier": 0.3,
+    "jumpModifier": 0.7,
+    "damageSourceKind": "ice",
+    "groundMovementModifier": 0.7,
     "speedModifier": 0.7,
-    "airJumpModifier": 0.7
+    "airJumpModifier": 0.7,
+    "armorAmount": 2
   },
   "defaultDuration" : 5,
 

@@ -2,7 +2,6 @@
   "name" : "cchasteii",
   "effectConfig" : {
     "colorWrap": "fade=00AAFF=0.3",
-    "jumpModifier": 1.1,
     "groundMovementModifier": 1.50,
     "speedModifier": 1.50,
     "airJumpModifier": 1.1

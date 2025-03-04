@@ -1,9 +1,12 @@
 {
 	"name": "ccarmordowniv",
 	"effectConfig": {
-		"extraArmorAmount": -160,
-		"jumpModifier": 0.5,
-		"colorWrap": "fade=BBBBBF=0.8"
+		"armorAmount": -200,
+		"colorWrap": "fade=BBBBBF=0.4",
+		"jumpModifier": 1.4,
+		"groundMovementModifier": 1.4,
+		"speedModifier": 1.4,
+		"airJumpModifier": 1.4
 	},
 	"defaultDuration": 10,
 	"scripts": [

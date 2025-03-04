@@ -21,11 +21,7 @@
 			],
 			"statusEffectsAlly": [
 				{
-					"effect": "ccelectrifiedi",
-					"duration": 3
-				},
-				{
-					"effect": "cchastei",
+					"effect": "ccelectrifiedallyi",
 					"duration": 3
 				}
 			]

@@ -1,0 +1,17 @@
+{
+	"name": "livingarmori",
+	"effectConfig": {
+		"armorAmount": 40,
+		"healAmount": 25, // amount of healing in HP% to restore
+		"isInstant": false,
+		// "maxStacks": 1,
+		"colorWrap": "fade=33FF33=0.3"
+	},
+	"defaultDuration": 10,
+	"scripts": [
+		"livingarmor.lua"
+	],
+	"animationConfig": "livingarmor.animation",
+	"label": "Living Armor I",
+  	"icon" : "/interface/statuses/slime.png"
+}
