@@ -16,10 +16,6 @@
 				{
 					"effect": "ccfrosti",
 					"duration": 3
-				},
-				{
-					"effect": "ccarmordowni",
-					"duration": 3
 				}
 			],
 			"statusEffectsAlly": [
