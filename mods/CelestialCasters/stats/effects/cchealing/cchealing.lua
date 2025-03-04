@@ -8,11 +8,11 @@ function init()
   
 	script.setUpdateDelta(5)
 	
-	BasicStatusEffects.Healing.init(config, status)
+	BasicStatusEffects.Healing.init(config)
   end
   
   function update(dt)
-	BasicStatusEffects.Healing.update(dt, status)
+	BasicStatusEffects.Healing.update(dt)
   end
   
   function uninit()
