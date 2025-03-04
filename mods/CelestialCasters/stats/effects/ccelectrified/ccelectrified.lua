@@ -28,7 +28,8 @@ function update(dt)
     for i,id in ipairs(targetIds) do
       local sourceEntityId = effect.sourceEntity() or entity.id()
       if not world.lineTileCollision(mcontroller.position(), world.entityPosition(id)) then
-        local sourceDamageTeam = {type = "friendly", team = 0}--world.entityDamageTeam(sourceEntityId)
+        -- local sourceDamageTeam = world.entityDamageTeam(sourceEntityId)
+        local sourceDamageTeam = {type = "friendly", team = 0}
         local directionTo = world.distance(world.entityPosition(id), mcontroller.position())
         world.spawnProjectile(
           "teslaboltsmall",
