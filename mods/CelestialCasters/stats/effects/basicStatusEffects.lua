@@ -36,7 +36,7 @@ BasicStatusEffects.EnergyRegen = {
 }
 function BasicStatusEffects.EnergyRegen.init(config)
     BasicStatusEffects.EnergyRegen.energyRegenAmount = config.getParameter("energyRegenAmount", 0)
-    if not BasicStatusEffects.EnergyRegen.energyRegenAmount == 0 then
+    if (not (BasicStatusEffects.EnergyRegen.energyRegenAmount == 0)) then
         BasicStatusEffects.EnergyRegen.isInstantER = config.getParameter("isInstantER", false)
         BasicStatusEffects.EnergyRegen.allowsPassiveRegen = config.getParameter("allowsPassiveRegen", false)
 
@@ -54,7 +54,7 @@ function BasicStatusEffects.EnergyRegen.init(config)
     end
 end
 function BasicStatusEffects.EnergyRegen.update(dt)
-    if (not BasicStatusEffects.EnergyRegen.energyRegenAmount == 0) and (not BasicStatusEffects.EnergyRegen.isInstantER) then
+    if (not (BasicStatusEffects.EnergyRegen.energyRegenAmount == 0)) and (not BasicStatusEffects.EnergyRegen.isInstantER) then
         BasicStatusEffects.EnergyRegen.addEnergy(BasicStatusEffects.EnergyRegen.energyRegenRate * dt)
     end
 end
@@ -67,7 +67,12 @@ function BasicStatusEffects.EnergyRegen.addEnergy(energyRegen)
             effectiveMultiplier = 0
         }})
     end
-    status.modifyResource("energy", energyRegen)
+    if energyRegen < 0 then
+        --BasicStatusEffects.Healing.addHealth(energyRegen) -- sacrifices health to replenish same amount in energy per time
+        status.consumeResource("energy", -energyRegen)
+    else
+        status.modifyResource("energy", energyRegen)
+    end
 end
 
 -- Armor Modify
