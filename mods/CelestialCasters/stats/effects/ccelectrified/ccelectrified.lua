@@ -14,10 +14,12 @@ function init()
   self.tickTimer = self.tickTime
   BasicStatusEffects.MovementSpeedModify.init(config)
   BasicStatusEffects.JumpModify.init(config)
+  BasicStatusEffects.EnergyRegen.init(config)
 end
 
 function update(dt)
   local speedMod = config.getParameter("speedModifier", 1)
+  BasicStatusEffects.EnergyRegen.update(dt)
   if(speedMod > 1) then
     BasicStatusEffects.MovementSpeedModify.update(dt)
   end

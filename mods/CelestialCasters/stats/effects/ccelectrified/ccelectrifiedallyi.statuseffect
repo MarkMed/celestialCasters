@@ -1,25 +1,27 @@
 {
-  "name" : "ccelectrifiedallyi",
-  "blockingStat" : "electricStatusImmunity",
-
-  "effectConfig" : {
-    "boltInterval" : 0.3,
-    "jumpDistance" : 7,
-    "healthDamageFactor" : 0.02,
-    "damageClampRange" : [2, 10],
-		"jumpModifier": 1.3,
-		"groundMovementModifier": 1.3,
-		"speedModifier": 1.3,
-		"airJumpModifier": 1.3
+  "name": "ccelectrifiedallyi",
+  "blockingStat": "electricStatusImmunity",
+  "effectConfig": {
+    "boltInterval": 0.3,
+    "jumpDistance": 7,
+    "healthDamageFactor": 0.02,
+    "damageClampRange": [
+      2,
+      10
+    ],
+    "jumpModifier": 1.3,
+    "groundMovementModifier": 1.3,
+    "speedModifier": 1.3,
+    "airJumpModifier": 1.3,
+    "energyRegenAmount": 20,
+    "isInstantER": false,
+    "allowsPassiveRegen": false
   },
-  "defaultDuration" : 5,
-
-  "scripts" : [
+  "defaultDuration": 5,
+  "scripts": [
     "ccelectrified.lua"
   ],
-
-  "animationConfig" : "ccelectrified.animation",
-
-  "label" : "CC Electrified I",
-  "icon" : "/interface/statuses/electric.png"
+  "animationConfig": "ccelectrified.animation",
+  "label": "CC Electrified I",
+  "icon": "/interface/statuses/electric.png"
 }

@@ -13,8 +13,9 @@ function BasicStatusEffects.Healing.init(config)
         BasicStatusEffects.Healing.addHealth(BasicStatusEffects.Healing.healAmount)
     else
         local maxHealth = status.resourceMax("health")
-        local healthPercentage = maxHealth / 100 --eg: 340 hp -> 1% = 3.4 -> healing 20% will heal 68 hp
-        BasicStatusEffects.Healing.healingRate = (healthPercentage * BasicStatusEffects.Healing.healAmount)/(effect.duration() or 1)
+        local healthPercentage = maxHealth / 100 -- eg: 340 hp -> 1% = 3.4 -> healing 20% will heal 68 hp
+        BasicStatusEffects.Healing.healingRate = (healthPercentage * BasicStatusEffects.Healing.healAmount) /
+                                                     (effect.duration() or 1)
     end
 end
 function BasicStatusEffects.Healing.update(dt)
@@ -24,6 +25,54 @@ function BasicStatusEffects.Healing.update(dt)
 end
 function BasicStatusEffects.Healing.addHealth(healAmount)
     status.modifyResource("health", healAmount)
+end
+
+-- EnergyRegen
+BasicStatusEffects.EnergyRegen = {
+    energyRegenAmount = 0, -- can be in specific amount or in percentage
+    isInstantER = false, -- if true, will instantly replenish energy, if false, will regen energy over time
+    allowsPassiveRegen = false, -- if true, will allow passive energy regen even in CD or shooting
+    energyRegenRate = 0 -- only for non-instant ER, the amount of energy to regen per second
+}
+function BasicStatusEffects.EnergyRegen.init(config)
+    BasicStatusEffects.EnergyRegen.energyRegenAmount = config.getParameter("energyRegenAmount", 0)
+    if (not (BasicStatusEffects.EnergyRegen.energyRegenAmount == 0)) then
+        BasicStatusEffects.EnergyRegen.isInstantER = config.getParameter("isInstantER", false)
+        BasicStatusEffects.EnergyRegen.allowsPassiveRegen = config.getParameter("allowsPassiveRegen", false)
+
+        if BasicStatusEffects.EnergyRegen.isInstantER then
+            -- BasicStatusEffects.Healing.addHealth(-BasicStatusEffects.EnergyRegen.energyRegenAmount) sacrifices health to replenish same amount in energy
+            BasicStatusEffects.EnergyRegen.addEnergy(BasicStatusEffects.EnergyRegen.energyRegenAmount)
+        else
+            local maxEnergy = status.resourceMax("energy")
+            local energyPercentage = maxEnergy / 100 -- eg: 340 energy -> 1% = 3.4 -> regen 20% will regen 68 energy
+            BasicStatusEffects.EnergyRegen.energyRegenRate = (energyPercentage *
+                                                                 BasicStatusEffects.EnergyRegen.energyRegenAmount) /
+                                                                 (effect.duration() or 1)
+        end
+
+    end
+end
+function BasicStatusEffects.EnergyRegen.update(dt)
+    if (not (BasicStatusEffects.EnergyRegen.energyRegenAmount == 0)) and (not BasicStatusEffects.EnergyRegen.isInstantER) then
+        BasicStatusEffects.EnergyRegen.addEnergy(BasicStatusEffects.EnergyRegen.energyRegenRate * dt)
+    end
+end
+function BasicStatusEffects.EnergyRegen.addEnergy(energyRegen)
+
+    -- removes the energy regen block time, allowing the player to regen energy even in CD or shooting
+    if BasicStatusEffects.EnergyRegen.allowsPassiveRegen then
+        effect.addStatModifierGroup({{
+            stat = "energyRegenBlockTime",
+            effectiveMultiplier = 0
+        }})
+    end
+    if energyRegen < 0 then
+        --BasicStatusEffects.Healing.addHealth(energyRegen) -- sacrifices health to replenish same amount in energy per time
+        status.consumeResource("energy", -energyRegen)
+    else
+        status.modifyResource("energy", energyRegen)
+    end
 end
 
 -- Armor Modify
